@@ -24,5 +24,5 @@ To utilize handlebars (npm) for rendering the page with database (MySQL).
 
 
 
-                `Enjoy Eat-Da-Burger`
-        ![Data Table](/public/assets/img/SS1.png)   
+    `Enjoy Eat-Da-Burger`
+    ![Data Table](/public/assets/img/SS1.png)   
