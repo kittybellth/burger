@@ -16,6 +16,7 @@ router.get("/", function(req, res) {
   });
 });
 
+// Create New Data Route
 router.post("/", function(req, res) {
   burger.insertOne([
     "burger_name", "devoured"
@@ -26,6 +27,7 @@ router.post("/", function(req, res) {
   });
 });
 
+// Update Data Route
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
@@ -34,6 +36,17 @@ router.put("/:id", function(req, res) {
   burger.updateOne({
     devoured: req.body.devoured
   }, condition, function() {
+    res.redirect("/");
+  });
+});
+
+// Delete Data Route
+router.delete("/delete/:id", function(req, res) {
+  var condition = "id = " + req.params.id;
+
+  console.log("condition", condition);
+
+  burger.deleteOne(condition, function() {
     res.redirect("/");
   });
 });
