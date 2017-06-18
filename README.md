@@ -12,7 +12,7 @@ To utilize handlebars (npm) for rendering the page with database (MySQL).
 ### To use this app
 
 **Please click to start**
-[Heroku app](https://peaceful-shelf-66129.herokuapp.com/)
+[Heroku app](https://nameless-dawn-54839.herokuapp.com/)
 
  ### How this app works
 
